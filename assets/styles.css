@@ -245,15 +245,23 @@ a:hover { text-decoration-color: var(--accent); }
 .is-loading { color: var(--ink-faint); }
 
 /* ============================================================ Footer */
-.footer {
-  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
-  max-width: var(--wrap); margin: var(--space-7) auto 0;
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 1120px;
+  margin: 0 auto;
   padding: 32px clamp(20px, 5vw, 64px) 48px;
-  border-top: 1px solid var(--line); color: var(--ink-soft); font-size: 14px;
+  border-top: 1px solid #e7e4dd;
+  color: #6b6862;
+  font-size: 14px;
+  font-family: "Inter", system-ui, sans-serif;
 }
-.footer-links { display: flex; gap: 20px; }
-.footer-links a { color: var(--ink-soft); text-decoration: none; }
-.footer-links a:hover { color: var(--ink); }
+.site-footer a { color: inherit; text-decoration: none; }
+.footer-links { display: flex; gap: 24px; }
+.footer-links a { transition: color .2s ease; }
+.footer-links a:hover { color: #ff4d2e; }
 
 /* ============================================================ Responsivo */
 @media (max-width: 40rem) {
