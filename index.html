@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PH — Artigos sobre Design Visual</title>
+  <meta name="description" content="Coletânea técnica sobre princípios de percepção visual aplicados ao design de interfaces. Fundamentação em Gestalt, atenção e carga cognitiva, com olhar crítico sobre evidência e convenção." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topbar">
+    <a class="logo" href="#/" aria-label="PH, página inicial">PH<span class="dot" aria-hidden="true">.</span></a>
+    <nav class="topnav" aria-label="Principal">
+      <a href="#/">Artigos</a>
+      <a class="nav-cta" href="https://pedro201130.github.io/portifolio/" target="_blank" rel="noopener">Portfólio</a>
+    </nav>
+  </header>
+
+  <main id="conteudo" class="wrap" tabindex="-1">
+    <!-- View: lista -->
+    <section id="view-home" hidden>
+      <div class="hero">
+        <p class="hero__eyebrow">Coletânea técnica · Percepção &amp; Design</p>
+        <h1 class="hero__title">Princípios de percepção visual,<br />separando evidência de convenção.</h1>
+        <p class="hero__lead">
+          Artigos aprofundados sobre por que os princípios de design funcionam, a partir de mecanismos
+          de percepção: Gestalt, atenção e saliência, carga cognitiva. Cada texto distingue o que tem
+          base empírica do que é apenas hábito estético, e diz onde o princípio falha.
+        </p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filtrar por status">
+        <button class="chip is-active" data-filter="all" type="button">Todos</button>
+        <button class="chip" data-filter="Publicado" type="button">Publicados</button>
+        <button class="chip" data-filter="Planejado" type="button">Planejados</button>
+      </div>
+
+      <ul id="grid" class="grid" aria-live="polite"></ul>
+    </section>
+
+    <!-- View: artigo -->
+    <section id="view-article" hidden>
+      <nav class="crumbs" aria-label="Você está aqui">
+        <a href="#/">Artigos</a>
+        <span aria-hidden="true">/</span>
+        <span id="crumb-title">Artigo</span>
+      </nav>
+      <div id="article-status" class="notice" hidden></div>
+      <div class="article-layout">
+        <aside class="article-aside">
+          <nav id="toc" class="toc" aria-label="Neste artigo" hidden></nav>
+        </aside>
+        <div class="article-main">
+          <article id="article" class="prose"></article>
+          <p class="article-foot">
+            <a href="#/">← Voltar para todos os artigos</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p>Mantido por <strong>PH</strong>. Conteúdo educacional sobre design visual em português.</p>
+    </div>
+  </footer>
+
+  <script src="assets/content.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
